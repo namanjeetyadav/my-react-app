@@ -1,0 +1,144 @@
+.main-product-container {
+    border: 5px solid blue;
+    display: flex;
+
+    border: 1px solid #d6d6d6;
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin: 25px 0px 0px 0px;
+    padding: 12px 12px 12px 12px;
+
+
+
+
+
+
+}
+
+/* CSS for product image start here*/
+.image-container {
+    /* border: 5px solid green; */
+
+}
+
+.product-image {
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    /* width: 300px; */
+    /* height: auto; */
+    margin: 30px 10px 0px 0px
+}
+
+/* CSS for product image end here*/
+
+
+.product-name {
+    color: #011b52;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 0px 0px 8px;
+}
+
+.review-and-rating-heading {
+    padding: 0px 0px 0px 8px;
+}
+
+.customers-rating {
+    color: #fff;
+    background-color: green;
+    padding: 1px 5px 1px 5px;
+}
+
+.customers-review {
+    color: #293cff;
+    font-weight: lighter;
+}
+
+.short-line-desc {
+    color: #011b52;
+    padding: 0px 0px 0px 8px;
+    margin: 10px 0px 10px 0px;
+}
+
+.short-desc-box1,
+.short-desc-box2 {
+    border: 2px solid #d6d6d6;
+    box-shadow: 5px 7px #555;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #fdf5ff, #f6f8ff);
+    margin: 5px 5px;
+}
+
+
+.short-desc-box-heading {
+    padding: 3px 0px 0px 10px;
+}
+
+.short-desc-box-line {
+    font-weight: normal;
+    padding: 0px 0px 0px 10px;
+}
+
+/* short description box container */
+.box-desc-container {
+    display: flex;
+}
+
+
+.discount-description {
+    background-color: #02a664;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 13px 0px 13px 0px;
+    font-size: 13px;
+}
+
+.price-container {
+    display: inline-block;
+}
+
+.discounted-price {
+    text-decoration: line-through;
+    /* font-weight: bold; */
+    color: #aaa;
+    font-family: 'Roboto', roboto;
+    font-weight: 600;
+
+}
+
+.original-price {
+    font-family: 'Roboto', roboto;
+    font-weight: 600;
+}
+
+.add-to-basket-btn {
+    background-color: #022268;
+    color: #fff;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: none;
+    width: 255px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.add-to-basket-btn:hover {
+    background-color: #4169e1;
+    cursor: pointer;
+}
+
+
+
+/* CSS for fixed side form  */
+
+.side-form-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid orangered; */
+    position: fixed;
+    top: 20vh;
+    left: 75vw;
+    cursor: pointer;
+}

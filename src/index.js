@@ -1,13 +1,7 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-
 import React from 'react'; // importing react library
 import ReactDOM from 'react-dom/client'; // DOM of react
 import App from "./App";
-import ProductContainer from pdt.container.js
+import ProductContainer from './pdt-container.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +9,7 @@ root.render(
 
 {/* <h1>Compiler</h1> */}
 <App/>
+<ProductContainer/>
 
 
   </React.StrictMode>
