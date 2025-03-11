@@ -8,7 +8,7 @@ root.render(
   <React.StrictMode>
 
 {/* <h1>Compiler</h1> */}
-<App/>
+{/* <App/> */}
 <ProductContainer/>
 
 

@@ -3,6 +3,10 @@ import './pdt-container.css';
 
 
 const ProductContainer = () => {
+
+    const image ="https://taxbrick.com/wp-content/uploads/2023/04/PROPRIETORSHIP-FIRM-REGISTRATION-.png.webp";
+    const product_name= "Proprietorship Firm Registration";
+
     return (
         <div>
 
@@ -10,10 +14,10 @@ const ProductContainer = () => {
 
 <div className='main-product-container'>
                 <div className='image-container'>
-                    <img src='PROPRIETORSHIP FIRM REGISTRATION .png' width='350' height='auto' className='product-image' />
+                    <img src= {image} width='350' height='auto' className='product-image' />
                 </div>
                 <div className='short-desc-container'>
-                    <h1 className='product-name'>Proprietorship Firm Registration</h1>
+                    <h1 className='product-name'>{product_name}</h1>
                     <h5 className='review-and-rating-heading'> <span className='customers-rating'>4.7</span> <span
                         className='customers-review'>3422 customers</span></h5>
                     <div className='short-line-desc'>
