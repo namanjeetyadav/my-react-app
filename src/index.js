@@ -2,6 +2,7 @@ import React from 'react'; // importing react library
 import ReactDOM from 'react-dom/client'; // DOM of react
 import App from "./App";
 import ProductContainer from './pdt-container.js';
+import NavBar from './navbar.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -9,6 +10,7 @@ root.render(
 
 {/* <h1>Compiler</h1> */}
 {/* <App/> */}
+{/* <NavBar/> */}
 <ProductContainer/>
 
 
