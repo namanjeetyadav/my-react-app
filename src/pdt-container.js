@@ -2,7 +2,7 @@ import React from 'react';
 import './pdt-container.css';
 
 
-const ProductContainer = () => {
+const ProductContainer = (props) => {
 
     const image ="https://taxbrick.com/wp-content/uploads/2023/04/PROPRIETORSHIP-FIRM-REGISTRATION-.png.webp";
     const product_name= "Proprietorship Firm Registration";
