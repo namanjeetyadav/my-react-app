@@ -1,20 +1,23 @@
 import React from 'react';
 import './pdt-container.css';
+// import './main_data.json';
+import main_data from './main_data.json';
+
 
 
 const ProductContainer = (props) => {
 
-    const image ="https://taxbrick.com/wp-content/uploads/2023/04/PROPRIETORSHIP-FIRM-REGISTRATION-.png.webp";
-    const product_name= "Proprietorship Firm Registration";
+    const image = "https://taxbrick.com/wp-content/uploads/2023/04/PROPRIETORSHIP-FIRM-REGISTRATION-.png.webp";
+    const product_name = "Proprietorship Firm Registration";
 
     return (
         <div>
 
 
 
-<div className='main-product-container'>
+            <div className='main-product-container'>
                 <div className='image-container'>
-                    <img src= {image} width='350' height='auto' className='product-image' />
+                    <img src={image} width='350' height='auto' className='product-image' />
                 </div>
                 <div className='short-desc-container'>
                     <h1 className='product-name'>{product_name}</h1>
@@ -59,8 +62,27 @@ const ProductContainer = (props) => {
 
                 </div>
             </div>
+
+            <div>
+                {main_data.map((el, index) => (
+                 <div key={index} >
+                    <div className='main-content-container'>
+                    <h1 className='main-content-heading'>{el.heading}</h1>
+                    <p className='main-content-para'>{el.main_para}</p>
+                    </div>
+                    
+                </div>
+                ))}
+
+            </div>
+
+
+
+
         </div>
     )
 }
 
 export default ProductContainer;
+
+
