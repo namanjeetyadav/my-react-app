@@ -24,7 +24,14 @@
     },
     {
         "heading": "Comparative Insights",
-        "main_para": "table"
+        "main_para": [
+            ["Attribute", "Proprietorship", "Partnership", "LLP"],
+            ["Liability", "Unlimited", "Unlimited", "Limited"],
+            ["Compliance", "Minimal", "Moderate", "High"],
+            ["Setup Cost", "Low", "Medium", "High"],
+            ["Taxation", "Personal Income", "Partnership Firm", "Corporate Tax"],
+            ["Control", "Full", "Shared", "Shared"]
+        ]
     }
 ]
 

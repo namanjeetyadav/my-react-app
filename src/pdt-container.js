@@ -9,12 +9,40 @@ const ProductContainer = (props) => {
 
     const image = "https://taxbrick.com/wp-content/uploads/2023/04/PROPRIETORSHIP-FIRM-REGISTRATION-.png.webp";
     const product_name = "Proprietorship Firm Registration";
+    const renderMainPara = (main_para) => {
+        if (Array.isArray(main_para)) {
+            // Handle table data
+            return (
+                <table className="comparison-table">
+                    <thead>
+                        <tr>
+                            {main_para[0].map((header, index) => (
+                                <th key={index}>{header}</th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {main_para.slice(1).map((row, rowIndex) => (
+                            <tr key={rowIndex}>
+                                {row.map((cell, cellIndex) => (
+                                    <td key={cellIndex}>{cell}</td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            );
+        }
+        // Handle string paragraphs with newlines
+        return main_para.split('\n').map((line, index) => (
+            <p key={index} className="main-content-para">{line}</p>
+        ));
+    };
+
+
 
     return (
         <div>
-
-
-
             <div className='main-product-container'>
                 <div className='image-container'>
                     <img src={image} width='350' height='auto' className='product-image' />
@@ -65,13 +93,14 @@ const ProductContainer = (props) => {
 
             <div>
                 {main_data.map((el, index) => (
-                 <div key={index} >
-                    <div className='main-content-container'>
-                    <h1 className='main-content-heading'>{el.heading}</h1>
-                    <p className='main-content-para'>{el.main_para}</p>
+                    <div key={index} >
+                        <div className='main-content-container'>
+                            <h1 className='main-content-heading'>{el.heading}</h1>
+                            {renderMainPara(el.main_para)}
+                            {/* <p className='main-content-para'>{el.main_para}</p> */}
+                        </div>
+
                     </div>
-                    
-                </div>
                 ))}
 
             </div>
