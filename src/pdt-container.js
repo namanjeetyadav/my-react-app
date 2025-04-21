@@ -9,11 +9,14 @@ const ProductContainer = (props) => {
 
     const image = "https://taxbrick.com/wp-content/uploads/2023/04/PROPRIETORSHIP-FIRM-REGISTRATION-.png.webp";
     const product_name = "Proprietorship Firm Registration";
-    const renderMainPara = (main_para) => {
+
+    
+     const renderMainPara = (main_para) => {
         if (Array.isArray(main_para)) {
             // Handle table data
             return (
-                <table className="comparison-table">
+                // <table className="comparison-table">
+                <table className="main-content-para">
                     <thead>
                         <tr>
                             {main_para[0].map((header, index) => (

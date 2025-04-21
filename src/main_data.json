@@ -25,12 +25,21 @@
     {
         "heading": "Comparative Insights",
         "main_para": [
-            ["Attribute", "Proprietorship", "Partnership", "LLP"],
-            ["Liability", "Unlimited", "Unlimited", "Limited"],
-            ["Compliance", "Minimal", "Moderate", "High"],
-            ["Setup Cost", "Low", "Medium", "High"],
-            ["Taxation", "Personal Income", "Partnership Firm", "Corporate Tax"],
-            ["Control", "Full", "Shared", "Shared"]
+            ["Aspects", "Sole Proprietorship", "One Person Company"],
+            ["Legal Status", "Not a separate legal entity. The business and the owner are considered the same entity.", "A separate legal entity. The business has a distinct identity from the owner."],
+            ["Compliance", "Minimal compliance requirements include obtaining business licenses and filing income tax returns.", "A higher degree of compliance is required, such as maintaining proper books of accounts and filing annual returns with the Registrar of Companies."],
+            ["Ownership","The business is owned and operated by a single individual.","The business is owned and operated by a single individual, who acts as both the director and shareholder of the company."
+              ],
+              ["Taxation","The owner is taxed as an individual on the profits earned by the business.","The company is taxed as a separate legal entity, and the owner is taxed on any dividends received from the company."],
+              [
+                "Capital","The owner contributes all the capital required for the business.",
+                "The owner can raise capital by issuing shares or taking loans in the name of the company."
+              ],
+              [
+                "Continuity",
+                "The business ceases to exist upon the death of the owner.",
+                "The business continues to exist even after the death of the owner and can be passed on to their legal heirs."
+              ]
         ]
     }
 ]
